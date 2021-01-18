@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbook"
+    tools:context=".ActivityBooks">
+
+
+
+    <Button
+        android:id="@+id/book1"
+        android:layout_width="136dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/cpp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/book2"
+        android:layout_width="136dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/c"
+        app:layout_constraintStart_toEndOf="@+id/book1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/book3"
+        android:layout_width="136dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/python"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book1" />
+
+    <Button
+        android:id="@+id/book4"
+        android:layout_width="136dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/android"
+        app:layout_constraintStart_toEndOf="@+id/book3"
+        app:layout_constraintTop_toBottomOf="@+id/book2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="315dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bookup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
